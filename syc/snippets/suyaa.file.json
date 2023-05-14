@@ -1,0 +1,51 @@
+{
+    "files": {
+        "prefix": "files",
+        "body": [
+            "files(path)"
+        ],
+        "description": "获取目录下的所有文件"
+    },
+    "files_find": {
+        "prefix": "files_find",
+        "body": [
+            "files_find(path, pattern)"
+        ],
+        "description": "查找目录下的文件"
+    },
+    "files_find_all": {
+        "prefix": "files_find_all",
+        "body": [
+            "files_find_all(path, pattern)"
+        ],
+        "description": "查找目录下的所有文件(包含子目录)"
+    },
+    "file_exists": {
+        "prefix": "file_exists",
+        "body": [
+            "file_exists(path)"
+        ],
+        "description": "判断路径是否存在"
+    },
+    "file_copy": {
+        "prefix": "file_copy",
+        "body": [
+            "file_copy(path1, path2)"
+        ],
+        "description": "复制文件"
+    },
+    "file_move": {
+        "prefix": "file_move",
+        "body": [
+            "file_move(path1, path2)"
+        ],
+        "description": "移动文件"
+    },
+    "file_delete": {
+        "prefix": "file_delete",
+        "body": [
+            "file_delete(path)"
+        ],
+        "description": "删除文件"
+    }
+}

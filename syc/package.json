@@ -1,0 +1,52 @@
+{
+  "name": "syc",
+  "displayName": "Suyaa Script",
+  "description": "VSCode plugin for Suyaa Script",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "suyaa",
+        "aliases": [
+          "Suyaa Script",
+          "suyaa"
+        ],
+        "extensions": [
+          ".syc"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "suyaa",
+        "scopeName": "source.syc",
+        "path": "./syntaxes/suyaa.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "suyaa",
+        "path": "./snippets/suyaa.basic.json"
+      },
+      {
+        "language": "suyaa",
+        "path": "./snippets/suyaa.file.json"
+      },
+      {
+        "language": "suyaa",
+        "path": "./snippets/suyaa.folder.json"
+      },
+      {
+        "language": "suyaa",
+        "path": "./snippets/suyaa.path.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "path_combine": {
+        "prefix": "path_combine",
+        "body": [
+            "path_combine(path1, path2)"
+        ],
+        "description": "合并路径"
+    },
+    "path_get_full_file_name": {
+        "prefix": "path_get_full_file_name",
+        "body": [
+            "path_get_full_file_name(path)"
+        ],
+        "description": "获取文件全名"
+    },
+    "path_get_file_name": {
+        "prefix": "path_get_file_name",
+        "body": [
+            "path_get_file_name(path)"
+        ],
+        "description": "获取不包含扩展名的文件名"
+    },
+    "path_get_extension": {
+        "prefix": "path_get_extension",
+        "body": [
+            "path_get_extension(path)"
+        ],
+        "description": "获取扩展名"
+    },
+    "path_get_folder": {
+        "prefix": "path_get_folder",
+        "body": [
+            "path_get_folder(path)"
+        ],
+        "description": "获取父目录"
+    }
+}

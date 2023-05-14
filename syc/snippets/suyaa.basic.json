@@ -1,0 +1,100 @@
+{
+    "@": {
+        "prefix": "@",
+        "body": [
+            "@()"
+        ],
+        "description": "依次执行"
+    },
+    "step": {
+        "prefix": "step",
+        "body": [
+            "step()"
+        ],
+        "description": "依次执行"
+    },
+    "let": {
+        "prefix": "let",
+        "body": [
+            "let(var, value)"
+        ],
+        "description": "赋值操作"
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if(var, fntrue, fnfalse)"
+        ],
+        "description": "分支操作"
+    },
+    "while": {
+        "prefix": "while",
+        "body": [
+            "while(var, fn)"
+        ],
+        "description": "while循环"
+    },
+    "for": {
+        "prefix": "for",
+        "body": [
+            "for(var, start, end, step, fn)"
+        ],
+        "description": "for循环"
+    },
+    "foreach": {
+        "prefix": "foreach",
+        "body": [
+            "foreach(var, list, fn)"
+        ],
+        "description": "foreach循环"
+    },
+    "equal": {
+        "prefix": "equal",
+        "body": [
+            "equal(var, var)"
+        ],
+        "description": "判断是否相等"
+    },
+    "not": {
+        "prefix": "not",
+        "body": [
+            "not(var)"
+        ],
+        "description": "判断是否相等"
+    },
+    "and": {
+        "prefix": "and",
+        "body": [
+            "and(bool, bool)"
+        ],
+        "description": "判断是否同时为真"
+    },
+    "or": {
+        "prefix": "or",
+        "body": [
+            "or(bool, bool)"
+        ],
+        "description": "判断是否至少有一个为真"
+    },
+    "$": {
+        "prefix": "$",
+        "body": [
+            "$(var, var)"
+        ],
+        "description": "字符串"
+    },
+    "string": {
+        "prefix": "string",
+        "body": [
+            "string(var, var)"
+        ],
+        "description": "字符串"
+    },
+    "return": {
+        "prefix": "return",
+        "body": [
+            "return(var)"
+        ],
+        "description": "执行返回"
+    }
+}

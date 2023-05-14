@@ -1,0 +1,92 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Suyaa Script",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#notes"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "\\b(0|1|2|3|4|5|6|7|8|9)\\b"
+				},
+				{
+					"name": "keyword.other.key",
+					"match": "\\b(if|while|for|return|string|calculate|step|let|foreach|equal|not|compare|and|or)\\b"
+				},
+				{
+					"name": "keyword.other.console",
+					"match": "\\b(print|println|read_key|exec|exec_encoding)\\b"
+				},
+				{
+					"name": "keyword.other.file",
+					"match": "\\b(files|files_find|files_find_all|file_exists|file_copy|file_move|file_delete)\\b"
+				},
+				{
+					"name": "keyword.other.folder",
+					"match": "\\b(folders|folder_exists|folder_create|folder_move|folder_delete|file_move|file_delete)\\b"
+				},
+				{
+					"name": "keyword.other.path",
+					"match": "\\b(path_combine|path_get_full_file_name|path_get_file_name|path_get_extension|path_get_folder)\\b"
+				},
+				{
+					"name": "keyword.other.char1",
+					"match": "@|!"
+				},
+				{
+					"name": "keyword.other.char2",
+					"match": "\\,"
+				},
+				{
+					"name": "keyword.other.char3",
+					"match": "\\+"
+				},
+				{
+					"name": "keyword.other.char4",
+					"match": "\\-"
+				},
+				{
+					"name": "keyword.other.char5",
+					"match": "\\*"
+				},
+				{
+					"name": "keyword.other.char6",
+					"match": "\\/"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.suyaa",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.suyaa",
+					"match": "\\\\."
+				}
+			]
+		},
+		"notes": {
+			"name": "comment.suyaa",
+			"begin": "#",
+			"end": "#",
+			"patterns": [
+				{
+					"name": "constant.character.escape.suyaa",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.syc"
+}

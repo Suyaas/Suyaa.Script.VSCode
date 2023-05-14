@@ -1,0 +1,44 @@
+{
+    "folders": {
+        "prefix": "folders",
+        "body": [
+            "folders(path)"
+        ],
+        "description": "获取目录下的所有子目录"
+    },
+    "folder_exists": {
+        "prefix": "folder_exists",
+        "body": [
+            "folder_exists(path)"
+        ],
+        "description": "判断目录是否存在"
+    },
+    "folder_create": {
+        "prefix": "folder_create",
+        "body": [
+            "folder_create(path)"
+        ],
+        "description": "创建目录"
+    },
+    "folder_move": {
+        "prefix": "folder_move",
+        "body": [
+            "folder_move(path1, path2)"
+        ],
+        "description": "移动目录"
+    },
+    "folder_delete": {
+        "prefix": "folder_delete",
+        "body": [
+            "folder_delete(path)"
+        ],
+        "description": "删除目录"
+    },
+    "folder_delete_all": {
+        "prefix": "folder_delete_all",
+        "body": [
+            "folder_delete_all(path)"
+        ],
+        "description": "删除目录及所有子目录"
+    }
+}
