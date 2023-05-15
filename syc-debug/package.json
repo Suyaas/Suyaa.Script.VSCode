@@ -9,9 +9,23 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onDebug"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
+    "languages": [
+      {
+        "id": "suyaa",
+        "aliases": [
+          "Suyaa Script",
+          "suyaa"
+        ],
+        "extensions": [
+          ".syc"
+        ]
+      }
+    ],
     "commands": [
       {
         "command": "syc-run.helloWorld",
