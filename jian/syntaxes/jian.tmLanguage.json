@@ -1,0 +1,95 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "jian",
+	"patterns": [
+		{
+			"include": "#numeric"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#notes"
+		}
+	],
+	"repository": {
+		"numeric": {
+			"match": "\\d+",
+			"name": "constant.numeric"
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.other.key",
+					"match": "\\b(依次执行|计算|加|减|乘|除|字符串|赋值|判断|判断循环|规律循环|依次循环|相等|取反|比较|同时成立|单一成立)\\b"
+				},
+				{
+					"name": "keyword.other.console",
+					"match": "\\b(输出|换行输出|读取字符输入|执行|带编码执行)\\b"
+				},
+				{
+					"name": "keyword.other.file",
+					"match": "\\b(获取文件列表|查找文件|查找所有文件|检测文件|复制文件|移动文件|删除文件)\\b"
+				},
+				{
+					"name": "keyword.other.folder",
+					"match": "\\b(获取子文件夹列表|检测文件夹|创建文件夹|移动文件夹|删除文件夹|删除文件夹及子项)\\b"
+				},
+				{
+					"name": "keyword.other.numeric",
+					"match": "\\b(大于|大于等于|小于|小于等于)\\b"
+				},
+				{
+					"name": "keyword.other.path",
+					"match": "\\b(合并路径|获取完整文件名|获取文件名|获取文件扩展名|获取父文件夹)\\b"
+				},
+				{
+					"name": "keyword.other.char2",
+					"match": "\\,"
+				},
+				{
+					"name": "keyword.other.char3",
+					"match": "\\+"
+				},
+				{
+					"name": "keyword.other.char4",
+					"match": "\\-"
+				},
+				{
+					"name": "keyword.other.char5",
+					"match": "\\*"
+				},
+				{
+					"name": "keyword.other.char6",
+					"match": "\\/"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.jian",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.jian",
+					"match": "\\\\."
+				}
+			]
+		},
+		"notes": {
+			"name": "comment.jian",
+			"begin": "#",
+			"end": "#",
+			"patterns": [
+				{
+					"name": "constant.character.escape.jian",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.jc"
+}
